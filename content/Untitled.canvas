@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"ea89b185ceb2a148","x":46,"y":-680,"width":400,"height":400,"type":"file","file":"Why the hell did I spend 15 days building a shell?.md"},
+		{"id":"c45d2a18754eef4c","x":-400,"y":-80,"width":250,"height":60,"color":"6","type":"text","text":"Persistent History"}
+	],
+	"edges":[
+		{"id":"fdba2c7c0f045d2f","fromNode":"c45d2a18754eef4c","fromSide":"right","toNode":"ea89b185ceb2a148","toSide":"left"}
+	]
+}
