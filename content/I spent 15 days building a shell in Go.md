@@ -1,5 +1,5 @@
 Since 24th of May, I have been spending my nights either preparing for finals *one night before* (POM: 27th May, AIML: 30th May, TOC: 6th May) or building my own shell in Go. 
-Or playing a *little bit* of valorant with my friends ( a multiplayer useless and toxic FPS game )
+And playing a *little bit* of valorant with my friends ( a multiplayer useless and toxic FPS game )
 
 I also started *kind of* documenting what I learnt and stuff on $[twitter](https://x.com/itsakaashhh) (`declare twitter=X`)
 The repository can be found on my GitHub [here](https://github.com/adot-7/gow-shella/tree/main)
@@ -10,7 +10,7 @@ More technically, it runs on the REPL concept. Which stands for
 
 `Read --> Evaluate --> Print --> Loop`
 
-That's all a shell really is. It first reads (more like parses ) what you wrote from the standard input stream. It evaluates the final expression and prints any output and/or error generated to the standard output and standard error streams. These streams are channels or buffers where a process can either read or write from. Your operating system exposes these three standard streams to a process when it is created. 
+That's all a shell really is. It first reads (more like parses) what you wrote from the standard input stream. It evaluates the final expression and prints any output and/or error generated to the standard output and standard error streams. These streams are channels or buffers where a process can either read or write from. Your operating system exposes these three standard streams to a process when it is created. 
 
 *Un exemple, s'il vous plaît?* 
 If you've used python, you must have come across the python interactive shell where your code gets evaluated line by line. 
@@ -100,7 +100,7 @@ cmd.Run()
 ### III (Tokenizing)
 This is like the bedrock of all the stages. If your shell cannot tokenize the inputs correctly, then it won't function properly.
 Tokenizing is basically splitting the input text into chunks your program can read / parse. 
-When you write `echo six seven` or `echo six      seven`, your shell should print `six seven`, no extra spaces. That is, you tokenize the input by discarding extra spaces.
+When you write `echo six seven` or `echo six<EXTRA SPACES>seven`, your shell should print `six seven`, no extra spaces. That is, you tokenize the input by discarding extra spaces.
 But, there are exceptions. For example, anything between `''` (single quotes) is treated as a single complete token, no matter the extra spaces in it. `""` do the same thing with the exception of variable expansion [[#XII (Parameter expansion) | discussed below]] and escape characters like `\`.
 ```shell
 $ echo   six       seven
