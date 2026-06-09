@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: ⌬
+  pageTitle: "ᗅᗄ"
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -17,7 +17,8 @@ configuration:
     cdnCaching: true
     typography:
       header: Schibsted Grotesk
-      body: Source Sans Pro
+      # body: Source Sans Pro
+      body: "Atkinson Hyperlegible"
       code: IBM Plex Mono
     colors:
       lightMode:
@@ -81,7 +82,7 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
+      position: left
       priority: 30
   - source: github:quartz-community/crawl-links
     enabled: true
@@ -154,7 +155,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 50
+      priority: 40
   - source: github:quartz-community/graph
     enabled: true
     layout:
@@ -164,7 +165,7 @@ plugins:
     enabled: true
     layout:
       position: left
-      priority: 20
+      priority: 50
       group: toolbar
       groupOptions:
         grow: true
@@ -200,7 +201,7 @@ plugins:
       priority: 30
       group: toolbar
   - source: github:quartz-community/reader-mode
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 35
