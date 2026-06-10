@@ -113,10 +113,10 @@ This stage is important and I had to make a lot of changes to this functionality
 
 ### IV (Redirection)
 This is the stage where I truly understood the meaning behind the `>` operator. Before this, the only way I used `>` was for creating `requirements.txt` in python projects using `pip freeze > requirements.txt`. 
-Redirection *redirects* or *passes* the output of the expression before the '>' operator to the file mentioned after it. So, the output originally supposed to go to the standard output stream is instead *redirected* to a file. If the file doesn't exist, it is created. 
+Redirection *redirects* or *passes* the output of the expression before the `>` operator to the file mentioned after it. So, the output originally supposed to go to the standard output stream is instead *redirected* to a file. If the file doesn't exist, it is created. 
 For my purpose, `>` is the same as `1>` (you can look up the difference if interested.) 
-For standard errors, you can redirect them using '2>' operator. 
-Appending works by using '>>' instead of '>' and '2>>' instead of '2>'. 
+For standard errors, you can redirect them using `2>` operator. 
+Appending works by using `>>` instead of `>` and `2>>` instead of  `2>`. 
 [My tweet after completing this stage](https://x.com/itsakaashhh/status/2059088545483231248)
 
 My natural course of action was implementing this after tokenizing the input. 
