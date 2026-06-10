@@ -22,7 +22,7 @@ configuration:
       code: IBM Plex Mono
     colors:
       lightMode:
-        light: "#faf8f8"
+        light: "#eff2ec"
         lightgray: "#e5e5e5"
         gray: "#b8b8b8"
         darkgray: "#4e4e4e"
@@ -32,15 +32,36 @@ configuration:
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
+        light: "#000000"
+        lightgray: "#362c4d"
         gray: "#646464"
         darkgray: "#d4d4d4"
         dark: "#ebebec"
-        secondary: "#7b97aa"
+        secondary: "#a68af9"
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
-        textHighlight: "#b3aa0288"
+        textHighlight: "#7c7816"
+    # colors:
+    #   lightMode:
+    #     light: "#faf8f8"
+    #     lightgray: "#e5e5e5"
+    #     gray: "#b8b8b8"
+    #     darkgray: "#4e4e4e"
+    #     dark: "#2b2b2b"
+    #     secondary: "#284b63"
+    #     tertiary: "#84a59d"
+    #     highlight: rgba(143, 159, 169, 0.15)
+    #     textHighlight: "#fff23688"
+    #   darkMode:
+    #     light: "#161618"
+    #     lightgray: "#393639"
+    #     gray: "#646464"
+    #     darkgray: "#d4d4d4"
+    #     dark: "#ebebec"
+    #     secondary: "#7b97aa"
+    #     tertiary: "#84a59d"
+    #     highlight: rgba(143, 159, 169, 0.15)
+    #     textHighlight: "#b3aa0288"
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -82,8 +103,9 @@ plugins:
     enabled: true
     order: 50
     layout:
-      position: right
-      priority: 30
+      position: left
+      priority: 40
+      display: desktop-only
   - source: github:quartz-community/crawl-links
     enabled: true
     options:
@@ -152,7 +174,7 @@ plugins:
   - source: github:quartz-community/tag-page
     enabled: true
   - source: github:quartz-community/explorer
-    enabled: true
+    enabled: false
     layout:
       position: left
       priority: 50
@@ -261,7 +283,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
       theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw

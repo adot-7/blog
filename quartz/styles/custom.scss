@@ -1,3 +1,19 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+.left.sidebar {
+    background-color: var(--light);
+    border-right: 0cap;
+}
+.right.sidebar {
+    background-color: var(--light);
+    border-right: 0cap;
+}
+
+.page {
+    padding:0%;
+}
+
+.graph-outer{
+    border: 1px solid var(--secondary);
+}
