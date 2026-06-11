@@ -5,7 +5,8 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
+    provider: goatcounter
+    websiteId: adot
   locale: en-US
   baseUrl: blog.akashparashar.dev
   ignorePatterns:
