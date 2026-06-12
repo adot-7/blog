@@ -292,7 +292,9 @@ I love egg
 ```
 
 
-## Learning(s) ?  
+## sooo, what's next ?  
 This challenge made me realize that I really like Go as a language and seeing test cases pass gives me a hit I wasn't familiar with. 
 Moving on, I wanna try other challenges provided by codecrafters like building your own [BitTorrent](https://app.codecrafters.io/courses/bittorrent/overview), [Kafka](https://app.codecrafters.io/courses/kafka/overview) or even a [DNS server](https://app.codecrafters.io/courses/dns-server/overview).
 But I also wanna contribute to cool open source projects. Let's see what happens. 
+
+#go #build-your-own-x
