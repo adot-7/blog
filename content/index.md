@@ -1,5 +1,6 @@
 ---
 title: Akash Parashar
+aliases:
 ---
 # sooo,
 
